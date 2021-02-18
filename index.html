@@ -29,7 +29,7 @@
 	}
 
 	// e.g This will open an image in a new window
-	debugBase64("data:image/png;base64," + parse_query_string(location.search).base);
+	debugBase64("data:image/png;base64," + parse_query_string(location.search.substring(1)).base);
 	console.log(location.search);
 	console.log(parse_query_string(location.search).base);
 </script>
